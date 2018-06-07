@@ -1,0 +1,255 @@
+$navbarColor: #323738;
+html, body { background: #F5F5F5; }
+
+.navbar-default, .navbar-toggle:focus, .collapsed, button.navbar-toggle {
+  background: $navbarColor !important;
+  border: none;
+  a {
+    color: white !important;
+  }
+}
+
+  .navbar-header {
+    button, .navbar-brand {
+      transition: opacity 0.15s;
+    }
+    button {
+      margin-right: 0;
+    }
+    button:hover, .navbar-brand:hover {
+      opacity: 0.8;
+    }
+  }
+
+
+.navbar-default{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  .navbar-brand{
+    color: white;
+    &:hover{
+      color: white;
+    }
+  }
+  .browse-offers{
+    margin-left: 150px;
+  }
+  .btn-default{
+    color: black !important;
+  }
+  .btn-warning{
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+	.navbar-default{
+		.browse-offers{
+			margin-left: 5px;
+		}
+	}
+  .brand{
+      font-size: 50px !important;
+         color: white !important;
+         text-align:center;
+    }
+}
+
+.glyphicon-music {
+    font-size: 17px;
+    color: orange;
+}
+
+.notice{
+	margin-top: 0px !important;
+	margin-bottom: 0px;
+  text-align:center;
+  
+
+}
+.alert{
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+  background:orange;
+  border-radius: 0px;
+  
+}
+
+.navbar{
+        margin-bottom: 10px !important;
+    }
+
+    .error{
+	color:#a94442 !important;
+}
+
+.input-lg{
+  border: 1px solid orange !important;
+}
+ 
+
+.index{
+  margin-right: 0px;
+  width: 100%;
+}
+.upper{
+  background: orange;
+  opacity: 1;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 5vh;
+
+    .left{
+      .about{
+      margin-top:5%;
+      text-align:center;
+          font-size: 70px ;
+      }
+      .box{
+          font-size: 20px;
+      }
+    }
+
+    .right{
+      .glyphicon-music {
+          margin-top:10%;
+        margin-left:30%;
+         font-size: 200px;
+         color: white !important;
+        }
+    }
+
+    .about-us{
+    color: white;
+    padding: 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
+    background: orange;
+}
+
+}
+
+.first{
+  background: #F5F5F5;
+
+  opacity: 1;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  
+    .brand{
+      margin-top: 0px !important; 
+      font-size: 100px;
+         color: $navbarColor !important;
+         text-align:center;
+    }
+    .small{
+      font-size: 20px;
+         color: $navbarColor !important;
+         text-align:center;
+    }
+}
+
+.offers{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.pagination a, .pagination span.current, .pagination span.gap {
+    float: left;
+    padding: 0 14px;
+    line-height: 38px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    border-left-width: 0;
+    color: black;
+}
+
+.pagination {
+  float: right;
+  width:100%;
+    border-left: 1px solid black;
+    .first{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .prev {
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .page{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .next{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .last{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+}
+
+.orange{
+  color: orange;
+}
+
+.search{
+    input[type="text"]{
+      border: 2px solid orange;
+      padding: 7px;
+      font-size: 12px;
+      border-radius: 5px;
+}
+}
+
+.bg-orange{
+  background: orange;
+}
+
+
+.white{
+  color: white;
+}
+
+.award{
+  color: orange;
+}
+
+.proposal-form{
+  margin-left: 10%;
+}
+.contact-form{
+  .nickname{
+  display: none;
+  }
+}
+.mid{
+.about{
+      margin-top:5%;
+      text-align:center;
+          font-size: 70px ;
+      }
+      .box{
+          margin-top: 20%;
+          font-size: 20px;
+          text-align: center;
+      }
+      .leave{
+          margin-top: 20%;
+      }
+background: $navbarColor;
+  .contact{
+  color: orange !important;
+}
+}

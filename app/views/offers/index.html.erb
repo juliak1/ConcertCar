@@ -1,0 +1,52 @@
+<%= render "shared/search" %>
+
+<div class="row content offers">
+  <div class="col-xs-12 col-sm-4 col-md-3">
+    <div class="advance-search">
+      <h3>Advanced search</h3>
+      <%= form_tag search_offers_path, method: :get do |f| %>
+      <div class = "form-group">
+        <lablel>Concert</lablel>
+      <%= text_field_tag :concert, nil, placeholder: "Skillet, Metallica, etc.", class: "form-control input-lg" %>
+    </div>
+    <div class = "form-group">
+        <lablel>Location</lablel>
+      <%= text_field_tag :location, nil, placeholder: "Sopot, Gdynia", class: "form-control input-lg" %>
+    </div>
+    <div class = "form-group">
+        <lablel>Max Price</lablel>
+      <%= text_field_tag :price, nil, placeholder: "20$", class: "form-control input-lg" %>
+    </div>
+    <br/>
+      <%= submit_tag "Search", class: "btn btn-warning input-lg btn-block" %>
+      <% end %>
+    </div> <!-- end  div -->
+  </div> <!-- end bootstrap col -->
+  <div class="col-xs-12 col-sm-8 col-md-9">
+    <div class="offer-list">
+      <h3>Featured Offers <span class="small pull-right">1 - 25 results</span></h3>
+      <br>
+
+      <div class="offer-description clearfix">
+        <% @offers.each do |offer| %>
+        <div class="offer clearfix">
+          <div class="col-xs-8">
+
+            <p class="blue">
+
+              <%= link_to offer.concert, offer %> 
+            </p>  
+            <p>Price: <%= offer.price %> | Proposals: <%= offer.proposals.count %>  </p>
+          </div>
+          <div class="col-xs-4 text-right">
+            
+            <p> <%=offer.location %></p>
+          </div>
+        </div>
+        <% end %>
+
+        </div>
+      </div>
+      <%= render "shared/pagination"%>
+    </div>
+  </div>

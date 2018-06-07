@@ -1,0 +1,66 @@
+<div class="container index">
+  
+  <div class="row first">
+    <div class="col-sm-12">
+      <div class="brand">
+        <p>ConcertCar</p>       
+      </div>
+      
+      <div class="small">
+        
+<div class="row">
+  <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 text-center search">
+    <%= form_tag search_offers_path, method: :get do |f| %>
+    <%= text_field_tag :search, nil, placeholder: "", class: "col-md-9" %>
+    <%= submit_tag "Search", class: "col-md-3 btn btn-warning" %>
+    <% end %>
+  </div>
+</div> <!-- end search row -->
+      </div>
+     <br>
+     <br>
+    </div>
+  </div>
+
+  <div class="row upper">
+    <div class="left col-sm-6">
+      <div class="about-us">
+             <p class="about">About us</p>
+        <div class="box">
+               <P>ConcertCar is a site that allows people who 
+               want to travel cheaper and at the same time 
+               enjoy company of others who like the same music.
+              </P>
+        </div> <!-- end box div -->        
+      </div>
+    </div>
+    <div class="right col-sm-6">
+          <span class="glyphicon glyphicon glyphicon-music big"></span>
+
+    </div>
+
+  </div>
+    
+    <div class="row mid">
+      <div class="contact">
+        <div class="col-sm-4">
+          
+          <p class="about">Have a question? </p>
+           </div>
+        
+        <div class="col-sm-4"> 
+          <div class="box"><P>If you want to ask us something, or have a suggestion, or just want to say hi, get in touch. </P>
+          </div>
+           </div>
+       
+        <div class="col-sm-4"> 
+          <div class="leave">
+          <%= link_to "Leave us a message", new_contact_path, class: "btn btn-warning navbar-btn" %>
+            </div>
+          </div>
+    </div>
+  </div>
+    <div class="row lower">
+        <div class="col-sm-12"></div>
+    </div>
+</div>

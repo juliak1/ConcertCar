@@ -1,0 +1,21 @@
+<div class="contents">
+	<div class="container">
+		<h3>My Proposals <small class="pull-right"><%= @proposals.count %> total</small></h3>
+		<table class="table table-striped">
+			<thread>
+				<tr>
+					<th>Concert</th>
+					<th colspan="3"></th>
+				</tr>
+			</thread>
+			<tbody>
+				<% @offers.each do |offer| %>
+				<tr>
+					<td><%= link_to offer.concert, offer %></td>
+					
+				</tr>
+				<%end%>
+			</tbody>
+		</table>
+	</div>
+</div>
